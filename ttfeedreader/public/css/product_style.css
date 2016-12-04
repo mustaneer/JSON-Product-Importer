@@ -1,0 +1,298 @@
+select:focus{
+	outline:none;
+}
+.site-header {
+    padding: 30px 0;
+    background-color: #204a80;
+    color: #fff;
+	font-family: 'Russo One', sans-serif;
+}
+.site-header h1{
+	font-weight:normal;
+}
+.site-header a{
+	color: #fff;
+	text-decoration:none;
+}
+.site-header a:hover{
+	color: #fff;
+	text-decoration:none;
+}
+.productContainer h2{
+	font-size: 22px;
+	text-transform:capitalize;
+}
+.productsRow {
+    width: 1100px;
+    margin: 0 auto;
+    display: block;
+    overflow: hidden;
+    padding: 0 15px;
+}
+.clearboth{
+	clear:both;
+}
+.feed_categories{
+	padding: 6px 20px;
+    font-size: 16px;
+    border: 1px solid #757272;
+    color: #757272;
+    text-transform: capitalize;
+}
+.loadmore {
+    text-align: center;
+    font-size: 20px;
+    color: red;
+    padding: 50px 0 30px;
+}
+.singleProduct{
+    margin: 0 0 28px;
+}
+.singleProduct .productWrap {
+    padding: 15px;
+    border: 1px solid #757272;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.singleProduct .productContent {
+    height: 37px;
+    overflow: hidden;
+    clear: both;
+	margin-top: 10px;
+}
+.singleProduct .productContent h3{
+	margin: 0;
+	height:35px;
+}
+.singleProduct .productContent h3,
+.productContent p {
+    margin: 0 0 10px;
+}
+.singleProduct .productContent h3 a{
+	text-decoration:none;
+	float: left;
+	box-shadow:none;
+	font-weight:normal;
+	font-family: 'Play', sans-serif;
+    font-size: 16px;
+	overflow: hidden;
+	color:#5d5353;
+}
+.singleProduct .product {
+    text-align: center;
+	overflow:hidden;
+}
+
+.singleProduct .product img {
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+	margin-top: 8px;
+    width: 200px;
+    height: 150px;
+}
+.singleProduct .productWrap:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  
+}
+
+.singleProduct .productPerview {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -200%;
+    right: 0;
+	opacity: 0;
+    padding: 10px 20px;
+    max-height: 40px;
+    max-width: 150px;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 10px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transform:: all 0.5s ease;
+    transition: all 0.5s ease;
+	text-decoration:none;
+	font-weight: bold;
+}
+.singleProduct .productWrap:hover .productPerview {
+	opacity: 1;
+    left: 0;
+}
+.singleProduct .productWrap:hover .productOverlay {
+	opacity: 1;
+    visibility: visible;
+}
+.singleProduct .productPerview:hover {
+    background: #fff;
+	color:gray;
+}
+
+.singleProduct .productBottomLink {
+    background: #000;
+    padding: 10px;
+    color: #fff;
+    text-transform: capitalize;
+}
+.singleProduct .price_brand{
+	padding: 10px 0 0;
+	height:50px;
+	text-transform: capitalize;
+}
+.singleProduct .price_brand .feed_price, .price_brand .feed_brand{
+    font-size: 15px;
+    font-weight: bold;
+	
+}
+.singleProduct .price_brand .feed_brand {
+    float: right;
+    max-width: 134px;
+    height: 46px;
+    overflow: hidden;
+}
+.singleProduct .feed_category {
+    height: 42px;
+}
+.singleProduct .feed_category p{
+	display:inline;
+	text-transform:capitalize;
+}
+.singleProduct .productOverlay{
+	position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 50;
+    background: rgba(0, 0, 0, 0.55) none repeat scroll 0 0;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+}
+
+/*  Signle Page Css */
+.singlePage {
+    padding-top: 40px;
+}
+
+.singlePage span.feed_price {
+    font-size: 24px;
+    font-weight: bold;
+}
+.singlePage span.feed_price .currency {
+	font-size: 18px;
+    font-weight: normal;
+	display: inline;
+}
+
+.singlePage p{
+    display: inline;
+}
+.singlePage .feed_title {
+    padding-bottom: 10px;
+}
+.singlePage .feed_category, .singlePage .feed_date {
+    margin: 0 20px 0 0;
+	font-size:17px;
+	text-transform: capitalize;
+}
+.singlePage span.feed_brand {
+    font-size: 21px;
+    margin-left: 40px;
+	text-transform: capitalize;
+}
+.singlePage .hrsmall{
+	clear: both;
+    border-top: solid #ececec;
+    border-width: 1px 0 0;
+    margin: 15px 0;
+    height: 0;
+}
+.social-sharing.is-default {
+    padding: 16px 0;
+}
+.singlePage .social-sharing a {
+    display: inline-block;
+    color: #fff;
+    border-radius: 2px;
+    margin: 0 10px 10px 0;
+    height: 22px;
+    line-height: 22px;
+    text-decoration: none;
+    font-weight: normal;
+    padding: 0px 13px;
+}
+.singlePage .share-facebook {
+    background-color: #3b5998;
+}
+.singlePage .share-twitter {
+    background-color: #0087ba;
+}
+.singlePage .share-pinterest {
+    background-color: #9f191f;
+}
+.singlePage .share-google {
+    background-color: #c23321;
+}
+.singlePage .social-sharing span {
+    display: inline-block;
+    vertical-align: top;
+    height: 22px;
+    line-height: 22px;
+    font-size: 12px;
+}
+.singlePage .share-title {
+    font-weight: 900;
+    font-size: 12px;
+    padding-right: 10px;
+}
+.singlePage .allmeta{
+	margin-top:20px;
+}
+.singlePage .producttype{
+    width: 185px;
+    float: left;
+    font-size: 12px;
+}
+.singlePage .productImage{
+    margin-bottom: 10px;
+}
+.singlePage .productImage img{
+   margin:0 auto;
+}
+.singlePage .productphotosmall li {
+    width: 110px;
+    list-style: none;
+    float: left;
+    margin-bottom: 10px;
+	margin-right: 18px;
+	overflow: hidden;
+}
+.singlePage .productphotosmall li img{
+	width: 110px;
+}
+.singlePage .page_links{
+	color:#fff;
+	background-color: #204a80;
+	padding:5px 15px;
+	text-decoration:none;
+	font-size:18px;
+	margin-bottom: 10px;
+}
+.singlePage .previous_link {
+	float:left;
+}
+.singlePage .next_link {
+	float:right;
+}
+
+

@@ -1,0 +1,81 @@
+.container{
+	background:#fff;
+	padding:0 10px;
+}
+.tablehead{
+	width:100% !important;
+}
+.container-fluid {
+	text-align: center;
+}
+.container .myprogress {
+  margin: 0 auto;
+  width: 400px;
+}
+
+.myprogress {
+    height: 24px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+	padding: 3px 4px 3px;
+    border-radius: 6px;
+    border: 1px solid gray;
+}
+
+.progress-bar {
+  height: 16px;
+  border-radius: 4px;
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  transition: 0.4s linear;
+  transition-property: width, background-color;
+  
+}
+
+/*
+ * Note: using adjacent or general sibling selectors combined with
+ *       pseudo classes doesn't work in Safari 5.0 and Chrome 12.
+ *       See this article for more info and a potential fix:
+ *       http://css-tricks.com/webkit-sibling-bug/
+ */
+
+#five-percentage:checked ~ .myprogress > .progress-bar {
+  width: 5%;
+  background-color: #f63a0f;
+}
+
+#twenty-percentage:checked ~ .myprogress > .progress-bar {
+  width: 25%;
+  background-color: #f27011;
+}
+
+#sixty-percentage:checked ~ .myprogress > .progress-bar {
+  width: 50%;
+  background-color: #f2b01e;
+}
+
+#eighty-percentage:checked ~ .myprogress > .progress-bar {
+  width: 75%;
+  background-color: #f2d31b;
+}
+
+#onehundred-percentage:checked ~ .myprogress > .progress-bar {
+  width: 100%;
+  background-color: #86e01e;
+}
+
+.radio {
+  display: none !important;
+}
+span.import_number {
+	text-align: left;
+    float: left;
+    font-size: 20px;
+	margin: 0 0 15px;
+}
+span.percentage_number, .import_number {
+    font-size: 30px;
+}
+.memory_usage{
+	margin:10px;
+}
